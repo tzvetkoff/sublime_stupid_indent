@@ -6,7 +6,7 @@ import fnmatch
 import sublime
 import sublime_plugin
 
-class SmartIndent(sublime_plugin.EventListener):
+class StupidIndent(sublime_plugin.EventListener):
 	def on_load(self, view):
 		n = os.path.basename(view.file_name());
 		s = view.settings()
