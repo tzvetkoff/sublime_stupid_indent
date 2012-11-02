@@ -8,7 +8,7 @@ If you're using the [Sublime Package Control](http://wbond.net/sublime_packages/
 The other way around is to manually clone the repository:
 
 ``` bash
-# WARNING: This instructions apply only to Mac OS X / Linux
+# WARNING: This instructions apply only to Mac OS X
 cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
 git clone https://github.com/tzvetkoff/sublime_stupid_indent sublime_stupid_indent
 ```
