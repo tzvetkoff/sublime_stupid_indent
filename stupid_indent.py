@@ -8,12 +8,12 @@ import sublime_plugin
 
 class StupidIndent(sublime_plugin.EventListener):
 	def on_load(self, view):
-		n = os.path.basename(view.file_name());
-		s = view.settings()
-		c = s.get('stupid_indent', [])
-		for v in c:
-			for p in v.get('patterns', []):
-				if fnmatch.fnmatch(n, p):
-					s.set('tab_size', v.get('tab_size', s.get('tab_size')))
-					s.set('translate_tabs_to_spaces', v.get('translate_tabs_to_spaces', s.get('translate_tabs_to_spaces')))
+		basename = os.path.basename(view.file_name());
+		settings = view.settings()
+
+		for entry in sublime.load_settings('Stupid Indent.sublime-settings').get('configuration'):
+			for pattern in entry.get('patterns', []):
+				if fnmatch.fnmatch(basename, pattern):
+					settings.set('tab_size', entry.get('tab_size', settings.get('tab_size')))
+					settings.set('translate_tabs_to_spaces', entry.get('translate_tabs_to_spaces', settings.get('translate_tabs_to_spaces')))
 					return

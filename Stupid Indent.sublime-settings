@@ -1,0 +1,25 @@
+{
+	"configuration":
+	[
+		{
+			"patterns": ["Gemfile", "*.rb", "*.erb", "*.scss", "*.coffee"],
+			"tab_size": 2,
+			"translate_tabs_to_spaces": true
+		},
+		{
+			"patterns": ["*.html", "*.js", "*.css"],
+			"tab_size": 2,
+			"translate_tabs_to_spaces": true
+		},
+		{
+			"patterns": ["*.php"],
+			"tab_size": 4,
+			"translate_tabs_to_spaces": false
+		},
+		{
+			"patterns": ["*.md", "*.markdown"],
+			"tab_size": 4,
+			"translate_tabs_to_spaces": true
+		}
+	]
+}

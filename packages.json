@@ -3,14 +3,14 @@
 	"packages": [
 		{
 			"name": "Stupid Indent",
-			"description": "A Sublime Text 2 plugin to determine indentation settings based on filename rather than current indentation",
+			"description": "A Sublime Text 2/3 plugin to determine indentation settings based on filename rather than current indentation",
 			"author": "Latchezar Tzvetkoff",
 			"homepage": "https://github.com/tzvetkoff/sublime_stupid_indent",
 			"last_modified": "2012-10-19 14:00:00",
 			"platforms": {
 				"*": [
 					{
-						"version": "1.0.0",
+						"version": "1.1.0",
 						"url": "https://nodeload.github.com/tzvetkoff/sublime_stupid_indent/zipball/master"
 					}
 				]
